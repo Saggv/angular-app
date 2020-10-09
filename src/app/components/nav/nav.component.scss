@@ -1,0 +1,35 @@
+.site-nav{
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-form-field{
+    width: 100%;
+  
+    input{
+      width: 100%;
+      border-color: #ccc;
+    }
+  }
+  
+  .nav-action{
+  
+    .notification{
+      margin-right: .5rem;
+      border-left: 1px solid #ccc;
+      border-right:1px solid #ccc;
+      padding: 0 1rem;
+    }
+  
+    .wrap-button{
+      button{
+        margin:0 .5rem;
+  
+        mat-icon{
+          margin-right: 0.5rem;
+          margin-left: -4px;
+        }
+      }
+    }
+  }
+}

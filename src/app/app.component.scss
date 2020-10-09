@@ -1,0 +1,26 @@
+.slideshow{
+  height: 500px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+
+  app-card{
+    width: calc(100% / 4);
+    margin: 10px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+  }
+}
+
+.sidenav{
+  width: 350px;
+}

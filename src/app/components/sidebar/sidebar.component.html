@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <div class="profile">
+    <div class="avatar">
+      <img src="https://picsum.photos/200/300" alt="" />
+    </div>
+
+    <div class="profile-detail">
+      <label>Sagvv Sagvv</label>
+      <span>VIET NAM</span>
+    </div>
+
+    <mat-icon>how_to_reg</mat-icon>
+  </div>
+
+  <mat-list *ngFor="let item of sidebarItems">
+    <mat-list-item class="item-header">
+      <label>{{item.header.label}}</label>
+      <mat-icon>{{item.header.icon}}</mat-icon>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item *ngFor="let tem of item.list">
+      <mat-icon>{{tem.icon}}</mat-icon>
+      <label>{{tem.label}}</label>
+    </mat-list-item>
+  </mat-list>
+</div>
